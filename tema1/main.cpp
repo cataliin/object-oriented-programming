@@ -6,7 +6,7 @@ using namespace std;
 
 //Prima problema
 void inlocuirePare(int* v, int n) {
-    for (int i = 0;i<n;i++) {
+    for (int i = 0;i<n;i++) { //test
         if (v[i]%2==0)
             v[i] = 0;
     }
