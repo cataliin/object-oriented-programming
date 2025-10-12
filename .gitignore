@@ -1,1 +1,13 @@
 /seminar/
+
+# CLion / JetBrains IDE files
+.idea/
+*.iml
+
+# Build / compiler output
+cmake-build-debug/
+cmake-build-release/
+*.o
+*.obj
+*.exe
+*.out
