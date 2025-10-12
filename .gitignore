@@ -9,3 +9,5 @@ cmake-build-release/
 *.obj
 *.exe
 *.out
+
+/curs/
