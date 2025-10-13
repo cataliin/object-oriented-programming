@@ -11,3 +11,5 @@ cmake-build-release/
 *.obj
 *.exe
 *.out
+
+.DS_Store
