@@ -64,40 +64,41 @@ int cntPrenume(string* nume, int n, string& prenume) {
 }
 
 int main() {
-    // int n;
-    // cin >> n;
-    // if (n<= 0) {
-    //     cout << "n trebuie sa fie pozitiv si nenul";
-    //     return 0;
-    // }
-    // int* v = new int[n];
-    // for (int i = 0;i<n;i++)
-    //     cin >> v[i];
-    // int k;
-    // cin >> k;
-    // // elimKElem(v,n,k);
-    // dublareKElem(v,n,k);
-    // for (int i = 0;i<n;i++)
-    //     cout << v[i] << ' ';
-    // delete[] v;
-
-    //problema cu stringuri
     int n;
     cin >> n;
-    cin.get();
-
-    if (n <=0) {
+    if (n<= 0) {
         cout << "n trebuie sa fie pozitiv si nenul";
         return 0;
     }
-    string* nume = new string[n];
+    int* v = new int[n];
     for (int i = 0;i<n;i++)
-        getline(cin,nume[i]);
+        cin >> v[i];
+    int k;
+    cin >> k;
+    // elimKElem(v,n,k);
+    dublareKElem(v,n,k);
+    for (int i = 0;i<n;i++)
+        cout << v[i] << ' ';
+    delete[] v;
 
-    string prenume;
-    getline(cin, prenume);
-
-    cout << cntPrenume(nume,n,prenume);
-    delete[] nume;
+    //problema cu stringuri
+    // int n;
+    // cin >> n;
+    // cin.get();
+    //
+    // if (n <=0) {
+    //     cout << "n trebuie sa fie pozitiv si nenul";
+    //     return 0;
+    // }
+    // string* nume = new string[n];
+    // for (int i = 0;i<n;i++)
+    //     getline(cin,nume[i]);
+    //
+    // string prenume;
+    // cout << "\nIntrodu prenumele cautat\n";
+    // getline(cin, prenume);
+    //
+    // cout << "numarul de aparitii este " << cntPrenume(nume,n,prenume);
+    // delete[] nume;
     return 0;
 }
